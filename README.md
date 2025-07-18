@@ -1,4 +1,4 @@
-\# 🗂️ Daily Backup Script (Shell + Git Bash on Windows)
+# 🗂️ Daily Backup Script (Shell + Git Bash on Windows)
 
 
 
@@ -10,27 +10,18 @@ This project contains a simple Bash script to automate \*\*daily backups\*\* of 
 
 
 
-\## 🔧 Features
+## 🔧 Features
 
 
 
-\- 📦 Compresses and stores backups with date \& time
-
-\- 📝 Logs success/failure in a `backup.log` file
-
-\- 🐧 Runs in Git Bash (Windows-friendly Linux environment)
-
-\- 🕐 Can be automated via Task Scheduler or cron
-
-
+- 📦 Compresses and stores backups with date \& time
+- 📝 Logs success/failure in a `backup.log` file
+- 🐧 Runs in Git Bash (Windows-friendly Linux environment)
+- 🕐 Can be automated via Task Scheduler or cron
 
 ---
 
-
-
-\## 📁 Folder Structure
-
-
+## 📁 Folder Structure
 
 shell-backup-script/
 
@@ -38,39 +29,21 @@ shell-backup-script/
 
 └── README.md # Project documentation
 
-
-
-
-
 ---
 
+## 🖥️ Setup Instructions
 
+### 1. ✅ Requirements
 
-\## 🖥️ Setup Instructions
-
-
-
-\### 1. ✅ Requirements
-
-
-
-\- Git Bash installed (https://git-scm.com/download/win)
-
-\- Create these folders:
-
+- Git Bash installed (https://git-scm.com/download/win)
+- Create these folders:
 &nbsp; - `C:\\Users\\Lenovo\\Documents\\important` — folder to be backed up
 
 &nbsp; - `C:\\Users\\Lenovo\\backups` — folder to store backups
 
-
-
-\### 2. 📜 Modify `backup.sh` if needed
-
-
+### 2. 📜 Modify `backup.sh` if needed
 
 Update these lines in `backup.sh` with your desired paths:
-
-
 
 ```bash
 
@@ -78,13 +51,9 @@ SOURCE\_DIR="/c/Users/Lenovo/Documents/important"
 
 BACKUP\_DIR="/c/Users/Lenovo/backups"
 
-
-
 🔐 Make script executable
 
 In Git Bash:
-
-
 
 bash
 
@@ -121,38 +90,19 @@ Edit
 🧠 Notes
 
 If you see tar: Removing leading '/' from member names, it's normal and safe to ignore.
-
-
-
 You can automate the script using Windows Task Scheduler by calling Git Bash and this script.
-
-
-
 📌 Future Improvements (Optional Ideas)
 
 Email notifications for backup status
 
-
-
 Add cleanup of old backups (e.g., delete files older than 7 days)
 
-
-
 Support multiple folder backups
-
-
 
 🙌 Author
 
 Gaurav Rajput
 
-
-
 GitHub: @gaurav8299
 
-
-
 Email: gauravrajput3005@gmail.com
-
-
-
