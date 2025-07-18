@@ -55,40 +55,19 @@ BACKUP\_DIR="/c/Users/Lenovo/backups"
 
 In Git Bash:
 
-bash
-
-Copy
-
-Edit
-
 chmod +x backup.sh
 
-4\. ▶️ Run the script
-
-bash
-
-Copy
-
-Edit
+4. ▶️ Run the script
 
 ./backup.sh
 
 You should see a .tar.gz file created in /c/Users/Lenovo/backups/.
 
-
-
 🧾 Sample Log Output
-
-text
-
-Copy
-
-Edit
 
 \[Sat Jul 18 22:15:00 IST 2025] Backup successful: backup\_2025-07-18\_22-15-00.tar.gz
 
 🧠 Notes
-
 If you see tar: Removing leading '/' from member names, it's normal and safe to ignore.
 You can automate the script using Windows Task Scheduler by calling Git Bash and this script.
 📌 Future Improvements (Optional Ideas)
